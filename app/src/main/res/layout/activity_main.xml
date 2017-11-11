@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.treble.coinrate.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/btc_pics" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cryptocurrencies conversion processes"
+        android:textSize="30sp"
+        android:id="@+id/explore_btn"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coinrate"
+        android:layout_below="@id/explore_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="42sp"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp" />
+    <Button
+        android:id="@+id/coin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:text="Show coin list" />
+</RelativeLayout>
